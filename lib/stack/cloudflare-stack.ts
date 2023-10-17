@@ -16,7 +16,7 @@ export class CloudflareStack extends TerraformStack {
     // R2 Bucket
     new R2Bucket(this, "r2-bucket", {
         accountId: this.node.tryGetContext('accountId'),
-        name: "test-bucket",
+        name: "test-bucket-1234",
     })
   }
 }
